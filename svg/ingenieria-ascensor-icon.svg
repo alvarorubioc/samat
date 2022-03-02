@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="142px" viewBox="0 0 141 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ingenieria-ascensor-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-964.000000, -957.000000)">
+            <g id="Services" transform="translate(120.000000, 926.000000)">
+                <g id="ingenieria-ascensor-icon" transform="translate(844.133758, 32.000000)">
+                    <circle id="Oval" fill="#83CACB" cx="42.7042424" cy="94.4024242" r="42.7042424"></circle>
+                    <circle id="Oval" fill="#492775" cx="108.402424" cy="24.7248485" r="17.9793939"></circle>
+                    <path d="M77.5430303,65.1636364 L31.3769697,38.2327273" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M131.489697,38.2327273 L85.3236364,65.1636364" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M131.489697,33.6933333 L85.3236364,6.76242424" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M77.5430303,6.76242424 L31.3769697,33.6933333" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M131.489697,105.661818 L85.3236364,132.592727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M135.375758,98.8993939 L135.375758,40.4557576" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M77.5430303,132.592727 L31.3769697,105.661818" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M27.4824242,98.8993939 L27.4824242,40.4557576" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M81.4290909,71.9260606 L81.4290909,130.369697" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M81.4290909,26.9733333 L81.4290909,31.470303" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M81.4290909,17.9793939 L81.4290909,22.4763636" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M81.4290909,40.4557576 L81.4290909,44.9527273" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M81.4290909,49.449697 L81.4290909,53.9466667" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M54.4557576,35.9672727 L58.9527273,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M45.470303,35.9672727 L49.9672727,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M63.449697,35.9672727 L67.9466667,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M72.4436364,35.9672727 L76.9321212,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M85.9260606,35.9672727 L90.4230303,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M94.92,35.9672727 L99.4169697,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M103.905455,35.9672727 L108.402424,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M112.899394,35.9672727 L117.396364,35.9672727" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="81.4290909" cy="4.4969697" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="81.4290909" cy="134.866667" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="27.4824242" cy="103.396364" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="27.4824242" cy="35.9672727" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="81.4290909" cy="67.4290909" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="135.375758" cy="35.9672727" r="4.4969697"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="135.375758" cy="103.396364" r="4.4969697"></circle>
+                    <path d="M99.4169697,123.624242 L99.4169697,56.1951515" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M117.396364,114.630303 L117.396364,47.2012121" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M135.375758,58.4436364 L81.4290909,89.9054545" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M135.375758,80.92 L81.4290909,112.381818" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <polygon id="Path" stroke="#413F3F" stroke-width="2" points="36.4763636 96.5745455 36.4763636 53.9466667 72.4436364 74.2509091 72.4436364 116.878788"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

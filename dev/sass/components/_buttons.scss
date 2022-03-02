@@ -1,0 +1,50 @@
+a.btn, .btn, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include button;
+    padding: 0.65rem $space-3;
+	background-color: map-get($theme-colors, primary);
+	border: 0;
+	
+	&:active {
+		transition: none;
+	}
+
+	span, strong {
+		margin: 0 $space-05 0 $space-05;
+	}
+	
+	.icon {
+		/* icon inherits color of button label */
+		color: inherit;
+		flex-shrink: 0;
+	}
+}
+
+/* feedback */
+.btn[disabled] {
+	cursor: not-allowed;
+	background-color: map-get($theme-colors, grey);
+	color: map-get($theme-colors, white);
+	box-shadow: none;
+	opacity: 0.6;
+
+	&:visited {
+		color: map-get($theme-colors, secondary);
+	}
+}
+
+
+.ctaform input[type="submit"] {
+	background: map-get($theme-colors, primary) ;
+
+	&:hover {
+		background: map-get($theme-colors, primary-20) !important;
+	}
+
+}
+
+.btn-full {
+	width: 100%;
+}

@@ -1,0 +1,120 @@
+.page-header .post-thumbnail{
+	position: relative;
+}
+
+.sticky {
+	display: block;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin-top: 3em;
+}
+
+.page-content .row {
+	margin-bottom: 6em;
+}
+
+#main {
+	margin-bottom: 4em;
+}
+
+.archive #main {
+	margin-top: 2em;
+}
+
+.blog #main {
+	margin-top: 2em;
+}
+
+.dflex {
+	display: flex;
+	justify-content: space-between;
+	margin: 3em 0;
+	@include mq($from: mobile, $until: tablet){
+		display: block;
+	}
+
+	p {
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	i {
+		font-size: 200%;
+		margin-bottom: .5em;
+	}
+}
+
+.five-reasons p {
+	padding-left: 2em;
+
+	&::before {
+	  	display: inline-block;
+	  	content: '';
+	  	height: 1em;
+	  	width: 1em;
+	  	background-size: 1em 1em;
+	  	margin-left: -2em;
+		margin-right: 1em;
+	  	background-repeat: no-repeat;
+	  	mask: url('./svg/sprite-icons/dot.svg') no-repeat 50% 50%;
+	    mask-size: cover;
+	    background-color: map-get($theme-colors, primary-20);
+	}
+}
+
+.row-filters {
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 1fr repeat(4, 1fr);
+	@include mq($from: mobile, $until: tablet){
+		grid-auto-flow: row;
+		grid-template-columns: 1fr;
+	}
+
+	select {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+		padding: .5em 1em;
+		outline: 0;
+		border: 0;
+		border-radius: 8px;
+		background: map-get($theme-colors, primary);
+		color: white;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		&::-ms-expand {
+			display: none;
+		}
+		&:hover, &:focus {
+			color: #000;
+			background: #ccc;
+		}
+	}
+	.facetwp-facet {
+		position: relative;
+	}
+	.facetwp-facet::after {
+		content: '';
+		mask: url('./svg/sprite-icons/chevron-down.svg') no-repeat 50% 50%;
+		mask-size: cover;
+	    background-color: white;
+		position: absolute;
+		top: .5em;
+		right: 1em;
+		width: 1.5em;
+		height: 1.5em;
+		pointer-events: none;
+	}
+}
+  

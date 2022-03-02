@@ -1,0 +1,70 @@
+a {
+	color: $color__link;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+
+/*
+ * CSS Animations
+ * Don't forget to add vendor prefixes!
+ * From: http://smoothstate.com/typical-implementation.html
+ */
+.m-scene .scene_element {
+  animation-duration: 0.3s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.m-scene .scene_element--top-bottom {
+  animation-name: top-bottom;
+}
+
+.m-scene .scene_element--rigth-left {
+  animation-name: rigth-left;
+}
+
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+/*
+ * Keyframes
+ */
+@keyframes top-bottom {
+  0% {
+  	opacity: 0;
+  	transform: translateY(-100%);
+  	}
+  
+  100% {
+  	opacity: 1;
+  	transform: translateY(0);
+	}
+}
+
+@keyframes rigth-left {
+  0% {
+  	opacity: 0;
+    transform: translateX(100%);
+  	
+  	
+  	}
+  
+  100% {
+  	opacity: 1;
+  	transform: translateX(0);
+	}
+}

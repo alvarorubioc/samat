@@ -1,0 +1,82 @@
+ul, ol {
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
+ul {
+	list-style: disc;
+	padding: 0;
+}
+
+ol {
+	list-style: decimal;
+	list-style-position: inside;
+	padding: 0;
+
+	li {
+		margin-bottom: $space-05;
+	}
+}
+
+li > ul {
+	margin-bottom: 0;
+	list-style: circle;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+ol.is-style-list-numbers {
+	list-style: none;
+  	counter-reset: my-awesome-counter;
+	padding: 0;
+
+	li {
+		margin-bottom: $space-05;
+		position: relative;
+		counter-increment: my-awesome-counter;
+		margin-left: 36px;
+		
+		&:before {
+			content: counter(my-awesome-counter) "";
+  			
+			color: white;
+			font-weight: bold;
+			font-family: $font__header;
+			position: absolute;
+			--size: 24px;
+			left: calc(-1 * var(--size) - 10px);
+			line-height: var(--size);
+			width: var(--size);
+			height: var(--size);
+			top: 0;
+			background: map-get($theme-colors, primary);
+			border-radius: 50%;
+			text-align: center;
+		}
+	}
+}
+
+.is-style-link-arrow a {
+	text-decoration: underline;
+	position: relative;
+	&::after {
+		content: '';
+   		mask: url('svg/sprite-icons/chevron-right.svg');
+		mask-size: cover;
+		-webkit-mask: url('svg/sprite-icons/chevron-right.svg');
+		-webkit-mask-size: cover;
+		background-color: $color__link;
+		display: inline-block;
+    	height: 20px;
+    	width: 20px;
+		position: absolute;
+		top: 2px;
+
+	}
+}

@@ -1,0 +1,72 @@
+
+/* Backgrounds colors */
+$color__background-body: #fff;
+$color__background-light: #E6EBF1;
+$color__background-hr: #6D6B6E;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #E4224C;
+$color__link-visited: purple;
+$color__link-hover: #492775;
+$color__text-main: #1C1B1C;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+
+
+/* main colors */
+$primary-colors: (
+    primary: #492775,
+    primary-10: #9C75AD,
+    primary-20: #83CACB,
+);
+
+$secondary-colors: (
+    secondary: #E4224C,
+    gray: #6D6B6E,
+    black: #1C1B1C,
+    ligth: #E6EBF1,
+    white: #ffffff,
+);
+
+$theme-colors: map-merge($primary-colors, $secondary-colors);
+
+/* Fonts */
+$font__main: "Helvetica Neue", sans-serif;
+$font__header: 'Bai Jamjuree', sans-serif;
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+
+/* set base value. You can change this value */
+$space__unit: 1rem;
+
+/* space scale */
+$space-05: calc(0.5 * #{$space__unit}); // 8px
+$space-1: $space__unit; // 16px
+$space-2: calc(1.5 * #{$space__unit}); // 24px
+$space-3: calc(2 * #{$space__unit}); // 32px
+$space-4: calc(2.5 * #{$space__unit}); // 40px
+
+$space-5: calc(3.5 * #{$space__unit}); // 56px
+$space-6: calc(4 * #{$space__unit}); // 64px
+$space-7: calc(4.5 * #{$space__unit}); // 72px
+$space-8: calc(5 * #{$space__unit}); // 80px
+
+$space-9: calc(6 * #{$space__unit}); // 96px
+$space-10: calc(7 * #{$space__unit}); // 112px
+
+/* Layout, width and gap */
+$grid__gap: 2rem;
+$grid__gap-row: -$grid__gap;

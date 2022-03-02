@@ -1,0 +1,69 @@
+.icon {
+	height:1em;
+  	width:1em;
+  	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+	display: inline-flex;
+	align-items: center;
+	top: .125em;
+  	position: relative;
+}
+
+.icon-xs{
+	width: .6em;
+	height: .6em;
+}
+
+.icon-xl {
+	font-size: 2em;
+}
+
+i.breadcrumbs-arrow {
+	width: 20px;
+    height: 14px;
+    display: inline-block;
+    mask: url('./svg/sprite-icons/chevron-small-right.svg') no-repeat 50% 50%;
+    mask-size: cover;
+    background-color: white;
+}
+
+span.menu-mobile {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	-webkit-mask: url(svg/sprite-icons/menu.svg) no-repeat 50% 50%;
+	mask: url(svg/sprite-icons/menu.svg) no-repeat 50% 50%;
+	    mask-size: auto;
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	background-color: white;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+
+	@include mq(desktop) {
+       display: none;
+    }
+}
+
+
+.icon-menu-plus {
+	mask: url('./svg/sprite-icons/plus.svg') no-repeat 50% 50%;
+	background-color: $color__text-main;
+	width: 20px;
+    height: 20px;
+    display: inline-block; 
+    mask-size: cover;
+    transition: all ease-out 0.3s;
+}
+
+.icon-menu-minus {
+	mask: url('./svg/sprite-icons/minus.svg') no-repeat 50% 50%;
+	background-color: $color__text-main;
+	width: 20px;
+    height: 20px;
+    display: inline-block; 
+    mask-size: cover;
+    transition: all ease-out 0.3s;
+}

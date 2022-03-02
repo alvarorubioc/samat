@@ -1,0 +1,426 @@
+/* 
+- Name: megamenu.js - style.css
+- Version: 1.0
+- Latest update: 29.01.2016.
+- Author: Mario Loncarek
+- Author web site: http://marioloncarek.com
+*/
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+megamenu.js STYLE STARTS HERE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Screen style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.top-bar {
+  background: $color__background-light;
+  border-bottom: 1px solid #cecece;
+  font-family: $font__header;
+
+ p {
+ 	margin: 0;
+ }
+ 
+ a {
+ 	color: $color__text-main;
+ 	text-decoration: none;
+
+ 	&:hover{
+ 		color: map-get($theme-colors, primary);
+ 	}
+ }
+
+ small.top-bar-telf {
+  padding: 0 1em;
+}
+
+}
+
+.top-bar-contact {
+	font-weight: 700;
+  text-transform: uppercase;
+	
+	a {
+		color: map-get($theme-colors, secondary);
+	}
+
+	@include mq($from: mobile, $until: tablet) {
+        display: none;
+    }
+}
+
+.site-title {
+	@include mq($from: mobile, $until: tablet) {
+        text-align: center;
+    }
+}
+
+#menu-container {
+  background: map-get($theme-colors, primary);
+  @include mq($from: mobile, $until: desktop) {
+    height: auto;
+    position: relative;
+  }
+  
+  .container-fluid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center; 
+    padding-top: 2em;
+    padding-bottom: 1em;
+    @include mq(mobile, tablet) {
+          display: block;
+      }
+    }
+
+    &.navbar-fixed {
+      background: $color__background-light;
+      z-index: 999;
+
+      .current-menu-item > a {
+        color: map-get($theme-colors, secondary) !important;
+      }
+      
+      .menu > ul > li a {
+        color: $color__text-main;
+        &:hover {color: map-get($theme-colors, secondary);}
+      }
+
+      .menu > ul > li.menu-dropdown-icon > a:after {
+        background-color: $color__text-main;
+      }
+      .custom-logo {
+        filter: invert(80%) sepia(100%) saturate(500%) hue-rotate(585deg) brightness(70%);
+      }
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    @include mq($from: mobile, $until: desktop) {
+        position: inherit;
+    }
+
+    .container {
+      padding-top: 1em !important;
+    }
+}
+
+.navbar-fixed .site-branding {
+    transition: all 0.3s ease-out;
+    width: 198px;
+}
+
+.site-branding {
+    max-width: 280px;
+    transition: all 0.3s ease-out;
+
+    @include mq($from: mobile, $until: desktop) {
+        width: 220px;
+    }
+}
+
+nav#navbar {
+  justify-self: end;
+
+  @include mq($from: mobile, $until: desktop) {
+        margin-top: 2em;
+        background-color: $color__background-light;
+    }
+}
+
+.wpml-ls-item ul.sub-menu.normal-sub {
+  width: auto;
+  right: 0;
+
+}
+
+.menu-toggle {
+  display:none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  line-height: 52px;
+  border-left: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+
+   &:hover {
+      color: $color__link;
+    }
+}
+
+.menu > ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+  font-family: $font__header;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+
+.menu > ul:after {
+  clear: both;
+}
+
+.menu > ul > li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+
+.menu > ul > li a {
+  text-decoration: none;
+  color: white;
+  padding: 1em .8em;
+  display: block;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: 80%;
+
+  &:hover {
+    color: $color__link;
+  }
+
+  @include mq($from: mobile, $until: desktop) {
+    border-bottom: 1px solid #ccc;
+    color: $color__text-main;
+  }
+}
+
+.menu .current-menu-item > a {
+  color: $color__link;
+}
+
+.menu .current-menu-item > .menu-toggle {
+  color: $color__link;
+}
+
+.menu > ul > li.menu-dropdown-icon > a {
+  @include mq($from: desktop) {
+    margin-top: -2px;
+  }
+  
+  &:after {
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+    content: '';
+    mask: url('./svg/sprite-icons/chevron-small-down.svg') no-repeat 50% 50%;
+    mask-size: cover;
+    background-color: white;
+
+      @include mq($from: mobile, $until: desktop) {
+          display: none;
+      }
+    }
+}
+
+li.clearfix:before {
+    display: inline;
+}
+
+.menu > ul > li > ul {
+  display: none;
+  transition: all 0.3s ease-out;
+  background: $color__background-light;
+  padding: 2em;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  width: 1180px;
+  box-shadow: 0 0px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+  @include mq($from: 300px, $until: 1024px) {
+        width:100%;
+        right: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+
+.menu > ul > li > ul:after {
+  clear: both;
+
+}
+
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 0;
+  list-style: none;
+  width: 25%;
+  background: none;
+  float: left;
+}
+
+.menu > ul > li > ul > li a {
+  padding: 0;
+  width: 90%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  color: $color__text-main;
+
+  i {
+    font-size: 140%;
+  }
+}
+
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  margin: 0;
+
+  &:hover {
+    color: $color__link;
+  }
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;
+  padding: 0.5em 0;
+  text-transform: initial;
+  font-weight: 500;
+  font-family: $font__main;
+}
+
+.menu > ul > li > ul.normal-sub {
+  width: auto;
+  min-width: 33%;
+  right: auto;
+  padding: 10px 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 1024px) {
+  
+  .logo-mobile {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+    position: relative;
+  }
+  .menu > ul > li > ul > li a {
+    padding: 1em 1.5em;
+    width: 100%;
+    display: block;
+
+  }
+  .menu > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    position: relative;
+    &:nth-child(5) {
+        height: 100%;    
+    }
+  }
+  .menu > ul > li:first-child {
+    margin: 0;
+    border-top: 1px solid #ccc;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+    display: none;
+    padding: .5em 1.5em;
+    border-bottom: 1px solid #ccc;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+
+}
+
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}

@@ -1,0 +1,101 @@
+.samat-card {
+	background: #FFFFFF;
+	border: 1px solid map-get($theme-colors, primary);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.30);
+	border-radius: 8px;
+	margin: 2em 0;
+
+	@include mq($from: mobile, $until: tablet) {
+    	margin: 1em 0;
+  	}
+
+	&.box-review {
+		background: map-get($theme-colors, primary);
+		color: white;
+
+		a {
+			color: map-get($theme-colors, secondary);
+		}
+	}
+
+	h2, h3, h4 {
+		margin: 0;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: map-get($theme-colors, primary);
+		&:hover { color: map-get($theme-colors, secondary); }
+	}
+
+	.samat-card-image {
+		padding: 1em 1em 0 1em;
+	}
+
+	.samat-card-header {
+		display: grid;
+	    grid-template-columns: 80px 1fr;
+	    grid-gap: 1em;
+	    padding: 2em 2em 0 2em;
+
+	    img {
+	    	border-radius: 50%;
+	    	max-width: 80px;
+	    }
+	}
+
+	.samat-card-content {
+		padding: 2em;
+
+		ul {
+			padding-left: 1em;
+			font-weight: normal;
+		}
+
+	}
+
+	.samat-card-footer {
+		margin-top: 1em;
+	}
+}
+
+.samat-card.card_horizontal {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.card_horizontal .samat-card-image {
+	padding: 2em 0 1em 2em;
+
+	img {
+		border-radius: 0;
+	}
+}
+
+.card-horizontal {
+	display: flex;
+}
+
+@media (max-width: 49.32333em) and (min-width: 20em) {
+	.card-horizontal {
+    display: block;
+	}
+}
+
+.card-horizontal .samat-card-image {
+	flex-basis: 40%;
+}
+
+.card-horizontal .samat-card-content{
+	flex-basis: 60%;
+}
+
+.samat-card.card_testimonial {
+
+	p {
+		margin: 0;
+	}
+}

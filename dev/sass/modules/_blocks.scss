@@ -1,0 +1,89 @@
+
+	
+.alignfull {
+	width: 99vw;
+	position: relative;
+	left: calc(-1 * (99vw - 100%) / 2);
+}
+
+.alignwide {
+	margin: 32px calc(25% - 25vw);
+	
+}
+
+.alignfull > .wp-block-group__inner-container, .alignfull > .wp-block-cover__inner-container {	
+	@include container;
+}
+
+.wp-block-group {
+	//margin-top: $space-6;
+
+	&.alignfull.has-background {
+    	padding: $space-5 0;
+    	margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+// Generate Block Colour Classes
+@each $name, $color in $theme-colors {
+	.has-#{$name}-color {
+		color: $color;
+	}
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}
+
+// Custom Buttons
+.wp-block-button .wp-block-button__link {
+	@include button;
+    padding: 0.8125rem $space-3;
+	opacity: 0.9;
+
+	&:not([class*="has-"]) {
+		background-color: map-get($theme-colors, primary) ;
+	}
+	
+	
+	&:hover {
+		opacity: 1; 
+	}
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+	border-radius: 0;
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+.is-style-samat-card {
+	position: relative;
+	background: #FFFFFF;
+	border: 1px solid map-get($theme-colors, primary);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.30);
+	border-radius: 8px;
+	padding: 1em;
+	margin-bottom: 2em;
+
+
+	h2, h3, h4, p {
+		margin-bottom: 0;
+		font-weight: 700;
+	}
+
+	a {
+		color: map-get($theme-colors, primary);
+		&:hover { color: map-get($theme-colors, secondary); }
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+}

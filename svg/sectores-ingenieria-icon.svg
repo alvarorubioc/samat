@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="142px" viewBox="0 0 142 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>sectores-ingenieria-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-563.000000, -957.000000)">
+            <g id="Services" transform="translate(120.000000, 926.000000)">
+                <g id="sectores-ingenieria-icon" transform="translate(444.000000, 32.000000)">
+                    <circle id="Oval" fill="#83CACB" cx="49.3547945" cy="80.7684932" r="42.6232877"></circle>
+                    <circle id="Oval" fill="#6D6B6E" cx="121.391781" cy="44.8671233" r="17.9506849"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="69.5493151" cy="44.8671233" r="44.8671233"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="94.2315068" cy="94.2315068" r="44.8671233"></circle>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="44.8671233" cy="94.2315068" r="44.8671233"></circle>
+                    <path d="M91.9876712,62.8178082 L96.4753425,62.8178082" id="Path" stroke="#413F3F" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M67.3054795,105.450685 L71.7931507,105.450685" id="Path" stroke="#413F3F" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M42.6328767,62.8178082 L47.1205479,62.8178082" id="Path" stroke="#413F3F" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M50.2082192,125.194521 C48.4435576,125.493593 46.6569484,125.644348 44.8671233,125.645205 C32.0985181,125.653718 20.5967547,117.928064 15.7755877,106.104625 C10.9544206,94.2811868 13.7744106,80.7156442 22.9082192,71.7931507" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M116.190411,71.7931507 C125.303334,80.718614 128.109932,94.2706481 123.291411,106.081284 C118.472891,117.89192 106.987261,125.61299 94.2315068,125.616438 C92.4416817,125.615581 90.6550725,125.464826 88.890411,125.165753" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M100.684932,40.7917808 C98.6450402,25.1501224 85.3186333,13.4488169 69.5445205,13.4488169 C53.7704077,13.4488169 40.4440009,25.1501224 38.4041096,40.7917808" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

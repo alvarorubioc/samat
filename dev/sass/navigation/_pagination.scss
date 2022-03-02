@@ -1,0 +1,39 @@
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 4em 0;
+    justify-content: center;
+    @include mq($from: mobile, $until: tablet) {
+        font-size: 80%
+    }
+}
+
+.page-item {
+	margin-right: .5em;
+    background-color: map-get($theme-colors, primary);
+    border-radius: 4px;
+
+    &.active span{
+        background-color: map-get($theme-colors, secondary);
+        border-radius: 4px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: white;
+
+    &:hover {
+        color: map-get($theme-colors, secondary);
+    }
+}

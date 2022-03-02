@@ -1,0 +1,86 @@
+/*!
+Theme Name: samat
+Theme URI: http://underscores.me/
+Author: Alvaro Rubioc
+Author URI: https://alvarorubioc.com
+Description: Engineering, sass, purple
+Version: 2.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: samat
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+samat is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Core
+--------------------------------------------------------------*/
+@import "core/variables";
+@import "core/spacing";
+//@import "core/colors";
+@import "core/mixins-master";
+@import "core/flexbox";
+@import "core/typography";
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/buttons";
+@import "components/captions";
+@import "components/cards";
+@import "components/elements";
+@import "components/fields";
+@import "components/galleries";
+@import "components/icons";
+@import "components/lists";
+@import "components/media";
+@import "components/tables";
+@import "components/wpcf7";
+
+
+
+/*--------------------------------------------------------------
+# Modules
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
+@import "modules/blocks";
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/links";
+@import "navigation/menus";
+@import "navigation/pagination";
+
+
+/*--------------------------------------------------------------
+# Site
+--------------------------------------------------------------*/
+@import "site/blog";
+@import "site/comments";
+@import "site/footer";
+@import "site/hero";
+@import "site/posts-and-pages";
+@import "site/widgets";

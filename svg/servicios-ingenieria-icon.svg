@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="141px" viewBox="0 0 141 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>servicios-ingenieria-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-150.000000, -955.000000)">
+            <g id="Services" transform="translate(120.000000, 926.000000)">
+                <g id="servicios-ingenieria-icon" transform="translate(30.000000, 30.000000)">
+                    <circle id="Oval" fill="#83CACB" cx="41.8929936" cy="97.9019108" r="41.8929936"></circle>
+                    <circle id="Oval" fill="#E4224C" cx="88.5745223" cy="29.5515924" r="17.6382166"></circle>
+                    <path d="M121.648408,104.518471 C132.580892,108.02293 139.286624,112.543949 139.286624,117.742675 C139.286624,128.701911 109.681529,137.583439 73.1477707,137.583439 C36.6140127,137.583439 7,128.701911 7,117.707006 C7,112.50828 13.7057325,107.987261 24.6382166,104.482803" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M62.1171975,117.742675 L66.5312102,117.742675" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M70.9363057,117.742675 L75.3503185,117.742675" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M79.755414,117.742675 L84.1694268,117.742675" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M117.234395,117.742675 L88.5745223,40.5732484" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <polyline id="Path" stroke="#413F3F" stroke-width="2" points="33.4573248 104.518471 40.0738854 104.518471 64.3197452 58.211465 81.9579618 58.211465 106.212739 104.518471 112.829299 104.518471"></polyline>
+                    <path d="M57.7121019,40.5732484 L29.0433121,117.742675" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M77.5528662,14.1159236 L77.5528662,5.29681529 C77.5528662,2.86148578 75.5786416,0.887261146 73.1433121,0.887261146 C70.7079826,0.887261146 68.733758,2.86148578 68.733758,5.29681529 L68.733758,14.1159236" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M73.1388535,49.3923567 L73.1388535,58.211465" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="73.1388535" cy="31.7541401" r="6.61656051"></circle>
+                    <path d="M90.8216561,31.7541401 C90.8216249,41.4896473 82.9337677,49.3841117 73.1982639,49.3922941 C63.4627602,49.4004765 55.5616439,41.5192824 55.5452479,31.783789 C55.528852,22.0482956 63.4033774,14.140533 73.1388535,14.1159236 C77.8237966,14.1064536 82.3202301,15.9602942 85.637171,19.2688717 C88.9541119,22.5774491 90.8192983,27.069188 90.8216561,31.7541401 Z" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M77.5261146,88.8598726 C84.0695176,88.213505 90.3839564,86.1046287 96.0025478,82.689172" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M50.2751592,82.689172 C55.8937506,86.1046287 62.2081894,88.213505 68.7515924,88.8598726" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <path d="M108.415287,71.444586 C114.151456,63.8178953 117.247316,54.5303151 117.234435,44.9872611" id="Path" stroke="#413F3F" stroke-width="2"></path>
+                    <circle id="Oval" stroke="#413F3F" stroke-width="2" cx="73.1388535" cy="89.0828025" r="4.40509554"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
