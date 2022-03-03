@@ -14,8 +14,6 @@
 
 get_header();
 ?>
-
-<header id="hero">
 <script type = "application / ld + json" >
 {
   "@context" : "http://schema.org/" ,
@@ -160,20 +158,23 @@ get_header();
   }
 }
 </script>
+
+<header id="hero">
+
 	<div class="container scene_element scene_element--top-bottom">
 		<div class="row breadcrumbs-header">
 	 		<div class="col-xs-12">
-        <?php if (function_exists('rank_math_the_breadcrumbs')) {
-				  echo '<div id="breadcrumbs" class="bg-primary">';
-				  rank_math_the_breadcrumbs();
-				  echo '</div>';
+			<?php if (function_exists('rank_math_the_breadcrumbs')) {
+					echo '<div id="breadcrumbs" class="bg-primary">';
+					rank_math_the_breadcrumbs();
+					echo '</div>';
 				}?>
 			</div>
     </div>
     <div class="row">
 			<div class="col-xs-12 col-md-6">
 				<!-- Titulo listado -->
-        <h1><?php the_field('services_title', 'options'); ?></h1>
+        		<h1><?php the_field('services_title', 'options'); ?></h1>
 				<?php the_field('services_excerpt', 'options') ;?>
 			</div>
 			<div class="col-xs-12 col-md-5 col-md-offset-1">

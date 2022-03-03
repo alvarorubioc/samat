@@ -37,10 +37,10 @@ span.menu-mobile {
 	    mask-size: auto;
 	-webkit-mask-size: cover;
 	mask-size: cover;
-	background-color: white;
+	background-color: map-get($theme-colors , secondary );
 	position: absolute;
 	right: 20px;
-	top: 20px;
+	top: 10px;
 
 	@include mq(desktop) {
        display: none;

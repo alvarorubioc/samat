@@ -14,7 +14,24 @@ if( $posts ): ?>
 			    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			        <?php setup_postdata($post); ?>
 			        <div class="col-xs-12 col-md-6 col-md-offset-1">
-						<div class="samat-card card_horizontal">	
+						<div class="samat-card">
+							<div class="samat-card-header">
+								<div><?php
+									$image = get_field('success_profile');
+									$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+
+									if ( $image ) {
+										echo wp_get_attachment_image( $image, $size );
+										
+									}
+									
+								?></div>
+								<div class="name_success">
+									<span class="text-h4"><?php the_field('success_name'); ?></span>
+									<div><?php the_field('success_cargo'); ?></div>
+									<strong><?php the_field('success_company'); ?></strong>
+								</div>
+							</div>	
 							<div class="samat-card-content">
 								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 									<?php the_title( '<h3 class="text-h4">', '</h3>' ); ?>	

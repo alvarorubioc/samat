@@ -3,7 +3,6 @@
 	border: 1px solid map-get($theme-colors, primary);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.30);
 	border-radius: 8px;
-	margin-bottom: 2em;
 
 	@include mq($from: mobile, $until: tablet) {
     	margin: 1em 0;

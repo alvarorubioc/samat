@@ -29,7 +29,7 @@
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="col-xs-12 col-md-6">
+			<div class="col-xs-12 col-md-5 col-md-offset-1">
 				<?php the_post_thumbnail('img-header'); ?>
 			</div>	
 		</div>

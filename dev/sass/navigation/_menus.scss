@@ -68,7 +68,7 @@ Screen style's
     display: grid;
     grid-template-columns: 300px 1fr;
     align-items: center; 
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 1em;
     @include mq(mobile, tablet) {
           display: block;
@@ -100,7 +100,6 @@ Screen style's
 .navbar-fixed {
     position: fixed;
     width: 100%;
-    height: 80px;
     @include mq($from: mobile, $until: desktop) {
         position: inherit;
     }
@@ -225,6 +224,8 @@ nav#navbar {
     content: '';
     mask: url('./svg/sprite-icons/chevron-small-down.svg') no-repeat 50% 50%;
     mask-size: cover;
+    -webkit-mask: url('./svg/sprite-icons/chevron-small-down.svg') no-repeat 50% 50%;
+    -webkit-mask-size: cover;
     background-color: white;
 
       @include mq($from: mobile, $until: desktop) {

@@ -12,8 +12,20 @@ $columns: (
 
 $columns__margin: 3.8%;
 
-.two-columns {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 2em;
+// Loops to enumerate the classes for grid columns.
+@for $i from 2 through 9 {
+
+	.grid-columns-#{$i} {
+		display: grid;
+		gap: $space-3;
+		grid-template-columns: repeat($i, 1fr);
+
+		@include mq($from: mobile, $until: tablet){
+			grid-template-columns: repeat(1, 1fr);
+		}
+		
+		& .samat-card {
+			height: 100%;
+		}
+	}
 }

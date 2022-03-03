@@ -61,6 +61,31 @@ ol.is-style-list-numbers {
 	}
 }
 
+ul.is-style-check-list {
+	list-style: none;
+	padding: 0;
+
+	li {
+		margin-bottom: $space-05;
+		position: relative;
+		margin-left: 36px;
+	}
+
+	li:before{
+		content: '';
+		mask: url("svg/sprite-icons/check.svg");
+		-webkit-mask: url("svg/sprite-icons/check.svg");
+		position: absolute;
+		--size: 23px;
+		left: calc(-1 * var(--size) - 10px);
+		line-height: var(--size);
+		width: var(--size);
+		height: var(--size);
+		top: 0;
+		background: map-get($theme-colors, secondary);
+	}
+}
+
 .is-style-link-arrow a {
 	text-decoration: underline;
 	position: relative;

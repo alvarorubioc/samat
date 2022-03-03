@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Alvaro Rubioc
 Author URI: https://alvarorubioc.com
 Description: Engineering, sass, purple
-Version: 2.0.1
+Version: 2.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: samat
@@ -35,10 +35,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "core/variables";
 @import "core/spacing";
-//@import "core/colors";
 @import "core/mixins-master";
 @import "core/flexbox";
 @import "core/typography";
+@import "core/columns";
 
 
 /*--------------------------------------------------------------

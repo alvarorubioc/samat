@@ -157,21 +157,9 @@ input.read-more-state:checked ~ .read-more-target {
     }
 }
 
-#section-blog {
-
-	.bg-section-blog {
-		padding-top: 2em;
-		background: linear-gradient(to bottom, rgba(131,202,203,1) 0%, rgba(131,202,203,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83cacb', endColorstr='#ffffff', GradientType=0 );
-
-		@include mq($from: mobile, $until: desktop){
-			background: map-get($theme-colors, primary-20);
-		}
-	}
-}
 
 #section-ctaform {
-	padding: 4em 0;
+	padding-top: 4em;
 	background: linear-gradient(to bottom, rgba(230,235,241,1) 0%, rgba(230,235,241,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ebf1', endColorstr='#ffffff', GradientType=0 );
 }
