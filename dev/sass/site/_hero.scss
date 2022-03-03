@@ -1,9 +1,8 @@
 #hero {
 	background: map-get($theme-colors, primary);
-	//background: linear-gradient(to bottom, rgba(73,39,117,1) 0%, rgba(73,39,117,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
-	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#492775', endColorstr='#ffffff', GradientType=0 );
-
-	//min-height: 540px;
+	background: linear-gradient(to bottom, rgba(73,39,117,1) 0%, rgba(73,39,117,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#492775', endColorstr='#ffffff', GradientType=0 );
+	min-height: 540px;
 	color: white;
 
 	h1 {
@@ -14,10 +13,6 @@
 	.swiper-slide .row{
 		margin-top: 6%;
 		margin-bottom: 6%;
-	}
-
-	.swiper-slide {
-		//width: initial !important;
 	}
 
 	.swiper-container {
@@ -33,29 +28,31 @@
 			height: 32px;
 			line-height: 2;
 		}
+
+		.swiper-wrapper {
+			box-sizing: inherit;
+		}
+
 		.swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
 			width: 32px;
 		}
+
 		.swiper-container-vertical > .swiper-pagination-bullets {
 			top: 42%;
 		}
+
 		.swiper-pagination {
 			right: 32px !important;
 		}
 	}
 
-	.hero-btns a{
+	.hero-btns a {
+		margin-right: $space-1;
+		margin-bottom: $space-1;
+		
 		@include mq($from: mobile, $until: tablet){
 			display: block;
 			white-space: nowrap;
-		}
-
-		&.btn-terciary {
-			margin-left: 2em;
-			@include mq($from: mobile, $until: tablet){
-				margin-left: 0;
-				margin-top: 2em;
-			}
 		}
 	}
 }
@@ -63,6 +60,7 @@
 
 #hero.header-archives {
 	background: map-get($theme-colors, primary) !important;
+	margin-bottom: $space-4;
 	
 }
 
@@ -72,23 +70,14 @@
 	margin-bottom: 6em;
 }
 
+.breadcrumbs-header {
+	padding-top: $space-6;
+	padding-bottom: $space-2;
 
-.breadcrumbs-wrapper {
-	border-bottom: 1px solid $color__background-light;
-	p {
-		margin: $space-05 0;
-		color: map-get($theme-colors, gray);
+	a {
+		color: map-get($theme-colors, primary-20);
 	}
 }
-
-#subheader {
-	margin-top: $space-6;
-	margin-bottom: $space-4;
-	@include mq($from: mobile, $until: desktop){
-		margin-top: $space-4;
-	}
-}
-
 
 
 #homepage-faqs {
@@ -114,7 +103,7 @@
   transition: .25s ease;
 }
 
-input.read-more-state:checked ~ .read-more-wrap .read-more-target {
+input.read-more-state:checked ~ .read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
@@ -160,28 +149,15 @@ input.read-more-state:checked ~ .read-more-wrap .read-more-target {
 
 #cta-metodo {
 	background: map-get($theme-colors, primary);
-	color: white;
-	padding: 3em 0;
-	margin-top: 6em;
 
 	@include mq(desktop){
 		background: rgba(73,39,117,1);
 		background: linear-gradient(to left, rgba(73,39,117,1) 0%, rgba(73,39,117,1) 85%, rgba(255,255,255,1) 85%, rgba(255,255,255,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#492775', endColorstr='#ffffff', GradientType=1 );
     }
-
-    .dot-metodo {
-		height: 26px;
-		width: 26px;
-		background-color: map-get($theme-colors, secondary);
-		border-radius: 50%;
-		display: inline-block;
-		margin-right: 0.5em;
-    }
 }
 
 #section-blog {
-	margin: 6em 0;
 
 	.bg-section-blog {
 		padding-top: 2em;

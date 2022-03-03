@@ -25,14 +25,8 @@ dfn, cite, em, i {
 blockquote {
 	margin: 0;
 	font-family: $font__header;
+	font-style: italic;
 	@include font-size(1.2);
-
-	&:before {
-		content: '"';
-	}
-	&:after {
-		content: '"';
-	}
 
 }
 
@@ -85,6 +79,7 @@ h1, h2, h3, h4, h5, h6,
 h1, .text-h1 {
 	font-size: 2.5em;
 	line-height: 1.2;
+	font-weight: 700;
 }
 
 h2, .text-h2 {

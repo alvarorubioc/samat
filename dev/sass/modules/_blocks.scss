@@ -1,5 +1,4 @@
 
-	
 .alignfull {
 	width: 99vw;
 	position: relative;
@@ -39,20 +38,19 @@
 .wp-block-button .wp-block-button__link {
 	@include button;
     padding: 0.8125rem $space-3;
-	opacity: 0.9;
+	font-size: 1em;
 
 	&:not([class*="has-"]) {
 		background-color: map-get($theme-colors, primary) ;
 	}
 	
-	
 	&:hover {
-		opacity: 1; 
+		filter: brightness(85%)
 	}
 }
 
 .wp-block-button.is-style-outline .wp-block-button__link {
-	border-radius: 0;
+	@include button;
 
 	&:hover {
 		color: inherit;
@@ -68,10 +66,25 @@
 	padding: 1em;
 	margin-bottom: 2em;
 
+	.wp-block-post-featured-image {
+		margin-bottom: 1em;
+	}
+
+	h2, h3, h4 {
+		font-weight: 700;
+	}
 
 	h2, h3, h4, p {
 		margin-bottom: 0;
-		font-weight: 700;
+	}
+
+	.entry-meta {
+		font-size: 85%;
+		margin: 1em 0;
+	}
+
+	figure {
+		margin: 0;
 	}
 
 	a {

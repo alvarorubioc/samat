@@ -12,7 +12,7 @@
 							<div class="row">
 								<div class="col-xs-12 col-md-6 text-hero scene_element scene_element--top-bottom">
 									<?php the_sub_field('home_texts_hero'); ?>
-									<div class="mt-4 mb-2 hero-btns"><?php 
+									<div class="mt-4 mb-2 hero-btns wp-block-button"><?php 
 										$buttom_1 = get_sub_field('home_buttom_1_hero');
 										$evento_1 = get_sub_field('home_onclick_1_hero');
 										$buttom_2 = get_sub_field('home_buttom_2_hero');
@@ -22,14 +22,14 @@
 											$link_title = $buttom_1['title'];
 											$link_target = $buttom_1['target'] ? $buttom_1['target'] : '_self';
 											?>
-											<a class="btn btn-secundary" onclick="<?php echo esc_url( $evento_1 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+											<a class="wp-block-button__link has-secondary-background-color has-background mr-1" onclick="<?php echo esc_url( $evento_1 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 										<?php endif;
 										if( $buttom_2 ): 
 											$link_url = $buttom_2['url'];
 											$link_title = $buttom_2['title'];
 											$link_target = $buttom_2['target'] ? $buttom_1['target'] : '_self';
 											?>
-											<a class="btn btn-terciary" onclick="<?php echo esc_url( $evento_2 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+											<a class="wp-block-button__link has-primary-20-background-color has-background" onclick="<?php echo esc_url( $evento_2 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 										<?php endif; ?>
 									</div>
 									

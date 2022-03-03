@@ -22,7 +22,6 @@ $color__border-input: #ccc;
 $color__border-abbr: #666;
 
 
-
 /* main colors */
 $primary-colors: (
     primary: #492775,
@@ -38,7 +37,7 @@ $secondary-colors: (
     white: #ffffff,
 );
 
-$theme-colors: map-merge($primary-colors, $secondary-colors);
+$theme-colors: map-merge($primary-colors, $secondary-colors) !default;
 
 /* Fonts */
 $font__main: "Helvetica Neue", sans-serif;

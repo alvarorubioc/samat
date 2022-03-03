@@ -52,5 +52,44 @@ require get_template_directory() . '/inc/template-functions.php';
 //add_filter( 'wpcf7_load_css', '__return_false' );
 
 
+    function template_part( $atts, $content = null ){
+        $tp_atts = shortcode_atts(array( 
+           'path' =>  null,
+        ), $atts);         
+        ob_start();  
+        get_template_part($tp_atts['path']);  
+        $ret = ob_get_contents();  
+        ob_end_clean();  
+        return $ret;    
+     }
+     add_shortcode('template', 'template_part'); 
+
+function testimonial_grid( $atts, $content = null ){
+   $tp_atts = shortcode_atts(array( 
+      'order' =>  null,
+   ), $atts);         
+   ob_start();  
+   get_template_part('template-parts/section', 'casosexito');  
+   $ret = ob_get_contents();  
+   ob_end_clean();  
+   return $ret;    
+}
+add_shortcode('testimonios', 'testimonial_grid'); 
+
+
+add_shortcode( 'cta_button', 'salcodes_cta' );
+
+function salcodes_cta( $atts ) {
+ $a = shortcode_atts( array(
+ 'link' => '#',
+ 'id' => 'salcodes',
+ 'color' => 'blue',
+ 'size' => '',
+ 'label' => 'Button',
+ 'target' => '_self'
+ ), $atts );
+ $output = '<p><a href="' . esc_url( $a['link'] ) . '" id="' . esc_attr( $a['id'] ) . '" class="button ' . esc_attr( $a['color'] ) . ' ' . esc_attr( $a['size'] ) . '" target="' . esc_attr($a['target']) . '">' . esc_attr( $a['label'] ) . '</a></p>';
+ return $output;
+}
 
 
