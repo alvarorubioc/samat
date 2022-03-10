@@ -16,7 +16,7 @@
 				<!--titulo p�gina  -->
 				<h1><?php single_post_title();?></h1>
 				<p class="mb-4"><?php echo get_the_excerpt() ;?></p>
-				<div class="wp-block-button">
+				<div class="wp-block-button mb-4">
 					<?php 
 						$link = get_field('page_button');
 						$evento = get_field('onclick_button');

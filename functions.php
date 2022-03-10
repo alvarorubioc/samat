@@ -93,3 +93,41 @@ function salcodes_cta( $atts ) {
 }
 
 
+// Add ACF options pages to CTP
+
+add_action('acf/init', 'my_acf_init');
+
+function my_acf_init() {
+
+	if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page(array(
+        'page_title'    => __('Landing casos de éxito', 'samat'),
+        'menu_title'    => __('Página casos éxito', 'samat'),
+        'menu_slug' => 'success_stories_page_setting',
+        'capability'    => 'edit_posts',
+        'parent_slug'   => 'edit.php?post_type=success_stories',
+
+    ));
+
+     acf_add_options_page(array(
+        'page_title'    => __('Landing servicios', 'samat'),
+        'menu_title'    => __('Página servicios', 'samat'),
+        'menu_slug' => 'services_page_setting',
+        'capability'    => 'edit_posts',
+        'parent_slug'   => 'edit.php?post_type=services',
+
+    ));
+
+      acf_add_options_page(array(
+        'page_title'    => __('Landing software', 'samat'),
+        'menu_title'    => __('Página software', 'samat'),
+        'menu_slug' => 'software_page_setting',
+        'capability'    => 'edit_posts',
+        'parent_slug'   => 'edit.php?post_type=software',
+
+    ));
+
+	}
+
+}

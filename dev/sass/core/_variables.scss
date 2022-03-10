@@ -69,3 +69,16 @@ $space-10: calc(7 * #{$space__unit}); // 112px
 /* Layout, width and gap */
 $grid__gap: 2rem;
 $grid__gap-row: -$grid__gap;
+
+/* set base value. You can change this value */
+$space__unit: 1rem;
+
+/* space scale */
+$space-xxs: calc(0.5 * #{$space__unit}); // 8px
+$space-xs: calc(1.5 * #{$space__unit}); // 24px
+$space-sm: calc(2 * #{$space__unit}); // 32px
+$space-md: calc(2.5 * #{$space__unit}); // 40px
+$space-lg: calc(3.5 * #{$space__unit}); // 56px
+$space-xl: calc(4 * #{$space__unit}); // 64px
+$space-xxl: calc(6 * #{$space__unit}); // 80px
+$space-xxxl: calc(8 * #{$space__unit}); // 96px

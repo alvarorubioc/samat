@@ -18,27 +18,22 @@ get_template_part( 'template-parts/header', 'page' ); ?>
 
 	<main id="main" class="container">
 
-	<?php
-	while ( have_posts() ) :
-		the_post();
+		<?php
+		while ( have_posts() ) :
+			the_post();
 
-		get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'page' );
 
-		// If comments are open or we have at least one comment, load up the comment template.
-		if ( comments_open() || get_comments_number() ) :
-			comments_template();
-		endif;
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
 
-	endwhile; // End of the loop.
-	?>
+		endwhile; // End of the loop.
+		?>
 
 	</main><!-- #main -->
 
-<?php get_template_part( 'template-parts/section', 'metodo' ); ?>
-<?php get_template_part( 'template-parts/section', 'ctaform' ); ?>
-<?php if(ICL_LANGUAGE_CODE=='es'): ?>
-	<?php get_template_part( 'template-parts/section', 'blog' ); ?>
-<?php endif;?>
+<?php get_template_part( 'template-parts/section', 'blog' ); 
 
-<?php
 get_footer();

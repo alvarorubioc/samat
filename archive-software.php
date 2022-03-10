@@ -59,7 +59,7 @@ get_header();
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
-			<div class="col-xs-12 col-md-3">
+			<div class="col-xs-12 col-md">
 				<div class="samat-card">
 					<div class="samat-card-image">
 						<?php the_post_thumbnail(''); ?>
@@ -77,12 +77,8 @@ get_header();
 	</div>
 </main><!-- #main -->
 
-<?php get_template_part( 'template-parts/section', 'metodo' ); ?>
-<?//php if(ICL_LANGUAGE_CODE=='es'): ?>
-	<?//php get_template_part( 'template-parts/section', 'blog' ); ?>
-<?//php endif;?>
-<div>&nbsp;</div>
 <?php get_template_part( 'template-parts/section', 'ctaform' ); ?>
+<?php get_template_part( 'template-parts/section', 'blog' ); ?>
 
 <?php
 get_footer();

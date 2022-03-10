@@ -50,6 +50,7 @@ span.menu-mobile {
 
 .icon-menu-plus {
 	mask: url('./svg/sprite-icons/plus.svg') no-repeat 50% 50%;
+	-webkit-mask: url('./svg/sprite-icons/plus.svg') no-repeat 50% 50%;
 	background-color: $color__text-main;
 	width: 20px;
     height: 20px;
@@ -60,6 +61,7 @@ span.menu-mobile {
 
 .icon-menu-minus {
 	mask: url('./svg/sprite-icons/minus.svg') no-repeat 50% 50%;
+	-webkit-mask: url('./svg/sprite-icons/minus.svg') no-repeat 50% 50%;
 	background-color: $color__text-main;
 	width: 20px;
     height: 20px;

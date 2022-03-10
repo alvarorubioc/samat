@@ -12,25 +12,9 @@
  * @package samat
  */
 
-get_header(); ?>
+get_header();
 
-<header id="hero">
-	<div class="container">
-		<div class="row breadcrumbs-header">
-	 		<div class="col-xs-12">
-	 			<?php if ( function_exists('yoast_breadcrumb') ) {
-					yoast_breadcrumb('<div id="breadcrumbs">','</div>');
-				} ?>
-			</div>
-        </div>
-        <div class="row text-header">
-			<div class="col-xs-12 col-md-8">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				<p><?php echo get_the_excerpt() ;?></p>
-			</div>
-		</div>
-	</div>
-</header>
+get_template_part( 'template-parts/header', get_post_type() );?>
 
 <div id="primary" class="container">
 	<div class="row">
@@ -52,7 +36,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<aside class="col-xs-12 col-md-4">
+		<aside class="col-xs-12 col-md-4 mt-2">
 			<?php if( get_field('success_testimonial_enabled') ): ?>
 
 				<div class="samat-card card_testimonial">
@@ -80,89 +64,14 @@ get_header(); ?>
 				</div>
 			<?php endif; ?>
 
-			<div class="samat-card">
-				<div class="samat-card-content">
-					<h2 class="text-h4"><?php _e('Servicios de ingeniería', 'samat');?></h2>
-
-						<?php
-						$post_objects = get_field('success_services');
-
-						if( $post_objects ): ?>
-						    <ul class="text-h6">
-						    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-						        <?php setup_postdata($post); ?>
-						        <li>
-						            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-						        </li>
-						    <?php endforeach; ?>
-						    </ul>
-						    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-						<?php endif;?>
-
-					<h2 class="text-h4"><?php _e('Equipo', 'samat');?></h2>
-						<?php
-
-							$rows = get_field('success_team_members');
-							if($rows)
-							{
-								echo '<ul class="text-h6">';
-
-								foreach($rows as $row)
-								{
-									echo '<li>' . $row['success_team'] . '</li>';
-								}
-
-								echo '</ul>';
-							} ?>
-					<h2 class="text-h4"><?php _e('Software', 'samat');?></h2>
-						<?php
-						$post_objects = get_field('success_software');
-
-						if( $post_objects ): ?>
-						    <ul class="text-h6">
-						    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-						        <?php setup_postdata($post); ?>
-						        <li>
-						            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-						        </li>
-						    <?php endforeach; ?>
-						    </ul>
-						    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-						<?php endif;?>
-
-					<h2 class="text-h4"><?php _e('Sectores', 'samat');?></h2>
-						<?php
-						$post_objects = get_field('success_sectors');
-
-						if( $post_objects ): ?>
-						    <ul class="text-h6">
-						    <?php foreach( $post_objects as $post): // variable must be called $post (IMPORTANT) ?>
-						        <?php setup_postdata($post); ?>
-						        <li>
-						            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-						        </li>
-						    <?php endforeach; ?>
-						    </ul>
-						    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-						<?php endif;?>
-
-				</div>
-			</div>
-
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Contact')) : ?>
-	                <?php endif; ?>
+	        <?php endif; ?>
 		</aside>
 
 	</div>
 </div><!-- #primary -->
 
-<?php get_template_part( 'template-parts/related', 'successstories' ); ?>
-<?php get_template_part( 'template-parts/section', 'metodo' ); ?>
-<?php if(ICL_LANGUAGE_CODE=='es'): ?>
-	<?php get_template_part( 'template-parts/section', 'blog' ); ?>
-<?php endif;?>
-
-
 <?php
-
+get_template_part( 'template-parts/related', 'successstories' );
+get_template_part( 'template-parts/section', 'blog' );
 get_footer();

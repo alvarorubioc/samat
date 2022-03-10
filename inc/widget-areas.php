@@ -43,16 +43,6 @@ function samat_widgets_init() {
 		'before_title'  => '<span class="text-h5 widget-title">',
 		'after_title'   => '</span>',
 	) );
-
-	register_sidebar( array(
-		'name'          => esc_html__( 'Contact', 'samat' ),
-		'id'            => 'contact-widget',
-		'description'   => esc_html__( 'Add widgets here.', 'samat' ),
-		'before_widget' => '<div id="sticky-form" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<span class="text-h5 widget-title">',
-		'after_title'   => '</span>',
-	) );
 	
 	register_sidebar( array(
 		'name'          => esc_html__( 'CTA Form', 'samat' ),
@@ -62,16 +52,6 @@ function samat_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
-	
-	register_sidebar( array(
-		'name'          => esc_html__( 'CTA', 'samat' ),
-		'id'            => 'cta-main',
-		'description'   => esc_html__( 'Add widgets here.', 'samat' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<span class="text-h2 widget-title">',
-		'after_title'   => '</span>',
 	) );
 
 }

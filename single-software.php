@@ -12,27 +12,27 @@
  * @package samat
  */
 
-get_header();
+get_header(); ?>
+<!-- Marcado  -->
+<script type="application/ld+json">
+   {
+	   "@context" : "http://schema.org",
+	   "@type" : "Service",
+	   "name" : "Expertos en Software para Automatizar Dise&ntilde;os en Ingenieria: <?php single_post_title();?>",
+	   "description" : "<?php echo get_the_excerpt() ;?>",
+	   "brand" : {
+	   "@type" : "Brand",
+	   "name":"Ingenieria SAMAT Espa&ntilde;a",
+	   "logo" : "https://ingenieriasamat.es/wp-content/uploads/2019/02/logo.svg"
+	   }
+   }
+</script>  <!-- FIN Marcado  --> 
 
-get_template_part( 'template-parts/header', 'page' ); ?>
-  <!-- Marcado  -->
-  <script type="application/ld+json">
-        {
-          "@context" : "http://schema.org",
-          "@type" : "Service",
-          "name" : "Expertos en Software para Automatizar Dise&ntilde;os en Ingenieria: <?php single_post_title();?>",
-          "description" : "<?php echo get_the_excerpt() ;?>",
-          "brand" : {
-            "@type" : "Brand",
-            "name":"Ingenieria SAMAT Espa&ntilde;a",
-            "logo" : "https://ingenieriasamat.es/wp-content/uploads/2019/02/logo.svg"
-          }
-        }
-        </script>  <!-- FIN Marcado  --> 
+<?php get_template_part( 'template-parts/header', get_post_type() );?>
 
 <div id="primary" class="container">
 	<div class="row">
-		<main id="main" class="col-xs-12 col-md-8">
+		<main id="main" class="col-xs-12">
 
 		<?php
 		while ( have_posts() ) :
@@ -50,43 +50,9 @@ get_template_part( 'template-parts/header', 'page' ); ?>
 
 		</main><!-- #main -->
 
-		<aside class="col-xs-12 col-md-4">
-			<div class="samat-card">
-				<div class="samat-card-header">
-					<?php
-						$image = get_field('software_profile');
-						$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-
-						if( $image ) {
-							echo wp_get_attachment_image( $image, $size );
-						}
-					?>
-					<div class="name_software">
-						<h4><?php the_field('software_name'); ?></h4>
-						<div><?php the_field('software_cargo'); ?></div>
-					</div>
-				</div>
-
-				<div class="samat-card-content">
-					<?php if( get_field('software_testimonio') ): ?>
-						<blockquote><?php the_field('software_testimonio'); ?></blockquote>
-					<?php endif; ?>
-				</div>
-			</div>
-
-			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('Contact')) : ?>
-	        <?php endif; ?>
-		</aside>
-
 	</div>
 </div><!-- #primary -->
 
-<?php get_template_part( 'template-parts/section', 'metodo' ); ?>
-<?php if(ICL_LANGUAGE_CODE=='es'): ?>
-	<?php get_template_part( 'template-parts/section', 'blog' ); ?>
-<?php endif;?>
-<?php get_template_part( 'template-parts/section', 'ctaform' ); ?>  
-
 <?php
-
+get_template_part( 'template-parts/section', 'blog' );
 get_footer();

@@ -40,7 +40,7 @@ get_header();
 	</div>
 </header>
 
-<section id="subheader" class="container">
+<section id="subheader" class="container mt-4">
 	<div class="row">
 		<div class="col-xs-12 col-md-5">
 				<h2><?php the_field('success_stories_subtitle', 'options'); ?></h2>
@@ -62,7 +62,7 @@ get_header();
 		<?php echo facetwp_display( 'facet', 'empresas' ); ?>
 	</div>
 
-	<div class="row">
+	<div class="grid-columns-3 mt-4 mb-8">
 		<?php if (have_posts()) : while (have_posts()) : the_post();
 
 			get_template_part( 'template-parts/loop', 'card' );

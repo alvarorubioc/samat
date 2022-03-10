@@ -72,7 +72,7 @@ function custom_post_services() {
             'menu_position' => 5, /* this is what order you want it to appear in on the left hand side menu */
             'menu_icon' => 'dashicons-portfolio', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
             'rewrite'   => array( 'slug' => 'servicios', 'samat' , 'with_front' => false ), /* you can specify its url slug */
-            'has_archive' => true, /* you can rename the slug here */
+            'has_archive' => false, /* you can rename the slug here */
             'capability_type' => 'page',
             'hierarchical' => true,
             /* the next one is important, it tells what's enabled in the post editor */
@@ -108,6 +108,7 @@ function custom_post_software() {
             'parent_item_colon' => ''
             ), /* end of arrays */
             'public' => true,
+            'show_in_rest' => true,
             'publicly_queryable' => true,
             'exclude_from_search' => false,
             'show_ui' => true,

@@ -60,7 +60,7 @@
 
 #hero.header-archives {
 	background: map-get($theme-colors, primary) !important;
-	margin-bottom: $space-4;
+	min-height: 340px;
 	
 }
 

@@ -1,4 +1,4 @@
-<div class="col-xs-12">
+<div class="col-xs-12 mb-2">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="samat-card card-horizontal">
 			<div class="samat-card-image">

@@ -87,7 +87,7 @@
 		margin: 0;
 	}
 
-	a {
+	h2 a, h3 a {
 		color: map-get($theme-colors, primary);
 		&:hover { color: map-get($theme-colors, secondary); }
 		&::before {

@@ -51,24 +51,6 @@
 	}
 }
 
-.five-reasons p {
-	padding-left: 2em;
-
-	&::before {
-	  	display: inline-block;
-	  	content: '';
-	  	height: 1em;
-	  	width: 1em;
-	  	background-size: 1em 1em;
-	  	margin-left: -2em;
-		margin-right: 1em;
-	  	background-repeat: no-repeat;
-	  	mask: url('./svg/sprite-icons/dot.svg') no-repeat 50% 50%;
-	    mask-size: cover;
-	    background-color: map-get($theme-colors, primary-20);
-	}
-}
-
 .row-filters {
 	display: grid;
 	grid-gap: 1em;
@@ -103,10 +85,14 @@
 	}
 	.facetwp-facet {
 		position: relative;
+		margin-bottom: 0;
 	}
+
 	.facetwp-facet::after {
 		content: '';
 		mask: url('./svg/sprite-icons/chevron-down.svg') no-repeat 50% 50%;
+		-webkit-mask: url('./svg/sprite-icons/chevron-down.svg') no-repeat 50% 50%;
+    	-webkit-mask-size: cover;
 		mask-size: cover;
 	    background-color: white;
 		position: absolute;
