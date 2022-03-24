@@ -33,7 +33,7 @@
                     </div>
                 </div>	
                 <div class="samat-card-content">
-                    <blockquote class="mb-1"><?php the_field('success_testimonio'); ?></blockquote>
+                    <p class="mb-1"><?php the_field('success_testimonio'); ?></p>
                     <div class="uppercase"><strong><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Ver caso de estudio</a></strong></div>							
                 </div>
             </div>
