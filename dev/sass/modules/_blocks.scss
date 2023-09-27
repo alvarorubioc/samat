@@ -1,8 +1,8 @@
 
 .alignfull {
-	width: 99vw;
+	width: 100vw;
 	position: relative;
-	left: calc(-1 * (99vw - 100%) / 2);
+	left: calc(-1 * (100vw - 100%) / 2);
 }
 
 .alignwide {
@@ -46,6 +46,10 @@
 	
 	&:hover {
 		filter: brightness(85%)
+	}
+
+	.has-primary-20-background-color {
+		color: $color__text-main;
 	}
 }
 

@@ -19,21 +19,21 @@
 	            	<?php the_custom_logo();?>
 	                <div class="footer-social">
 						<div class="item-social">
-							<a href="https://www.linkedin.com/company/ingenieriasamat" onclick="ga('send', 'event', 'Enlace', 'click', 'clickLinkedin');" rel="nofollow" aria-hidden="true">
+							<a href="https://www.linkedin.com/company/ingenieriasamat" onclick="ga('send', 'event', 'Enlace', 'click', 'clickLinkedin');" rel="nofollow" aria-label="Linkedin">
 								<svg class="icon" width="20" height="20" viewBox="0 0 20 20">
 	  								<use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/sprite-icons.svg#linkedin" />
 								</svg>
 							</a>
 						</div>
 						<div class="item-social">
-							<a href="https://twitter.com/IngenieriaSamat" onclick="ga('send', 'event', 'Enlace', 'click', 'clickTwitter');" rel="nofollow" aria-hidden="true">
+							<a href="https://twitter.com/IngenieriaSamat" onclick="ga('send', 'event', 'Enlace', 'click', 'clickTwitter');" rel="nofollow" aria-label="Twitter">
 								<svg class="icon" width="20" height="20" viewBox="0 0 20 20">
 	  								<use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/sprite-icons.svg#twitter" />
 								</svg>
 							</a>
 						</div>
 						<div class="item-social">
-							<a href="https://www.youtube.com/channel/UCFv0hMFWb3ZIEOIWoAOQyQA" onclick="ga('send', 'event', 'Enlace', 'click', 'clickYoutube');" rel="nofollow" aria-hidden="true">
+							<a href="https://www.youtube.com/channel/UCFv0hMFWb3ZIEOIWoAOQyQA" onclick="ga('send', 'event', 'Enlace', 'click', 'clickYoutube');" rel="nofollow" aria-label="YouTube">
 								<svg class="icon" width="20" height="20" viewBox="0 0 20 20">
 	  								<use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/sprite-icons.svg#youtube" />
 								</svg>

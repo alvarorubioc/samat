@@ -29,7 +29,7 @@
 											$link_title = $buttom_2['title'];
 											$link_target = $buttom_2['target'] ? $buttom_1['target'] : '_self';
 											?>
-											<a class="wp-block-button__link has-primary-20-background-color has-background" onclick="<?php echo esc_url( $evento_2 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+											<a class="wp-block-button__link has-primary-20-background-color has-color has-black-color has-background" onclick="<?php echo esc_url( $evento_2 ); ?>" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
 										<?php endif; ?>
 									</div>
 									
@@ -55,7 +55,7 @@
 	<?php endif; ?>
 </header>
 
-<script>
+<!-- <script>
 		var mySwiper = new Swiper('.swiper-container', {
 			// Optional parameters
 			direction: 'horizontal',
@@ -81,6 +81,6 @@
 			},
 
 		})
-	</script>
+	</script> -->
 
 
